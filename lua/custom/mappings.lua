@@ -66,7 +66,7 @@ M.custom = {
       'LSP code action',
     },
 
-    ['<leader>lf'] = {
+    ['<leader>fd'] = {
       function()
         vim.diagnostic.open_float { border = 'rounded' }
       end,
