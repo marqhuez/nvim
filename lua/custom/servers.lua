@@ -1,4 +1,20 @@
-local servers = {phpactor = {}, svelte = {filetypes = {"svelte"}}, tsserver = {}, volar = {}, tailwindcss = {}, pylsp = {},
+local servers = {
+  phpactor = {},
+  svelte = { filetypes = { 'svelte' } },
+  tsserver = {
+    filetypes = { 'vue', 'typescript' },
+    init_options = {
+      plugins = {
+        {
+          name = '@vue/typescript-plugin',
+          location = '/home/marqhuez/.nvm/versions/node/v20.11.1/lib/node_modules/@vue/typescript-plugin',
+          languages = { 'typescript', 'vue' },
+        },
+      },
+    },
+  },
+  tailwindcss = {},
+  pylsp = {},
   -- clangd = {},
   -- gopls = {},
   -- pyright = {},

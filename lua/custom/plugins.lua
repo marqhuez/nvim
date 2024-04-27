@@ -21,7 +21,14 @@ return {
     name = 'catppuccin',
     priority = 1000,
     config = function()
-      require('catppuccin').setup { flavour = 'macchiato' }
+      local currentHour = tonumber(os.date '%H')
+      local flavour = 'latte'
+
+      if currentHour >= 21 then
+        flavour = 'macchiato'
+      end
+
+      require('catppuccin').setup { flavour = flavour }
       vim.cmd.colorscheme 'catppuccin'
     end,
   },
