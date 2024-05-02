@@ -24,7 +24,7 @@ return {
       local currentHour = tonumber(os.date '%H')
       local flavour = 'latte'
 
-      if currentHour >= 21 then
+      if currentHour >= 19 then
         flavour = 'macchiato'
       end
 

@@ -1,7 +1,7 @@
 local currentHour = tonumber(os.date '%H')
 local theme = 'Tomorrow'
 
-if currentHour >= 21 then
+if currentHour >= 19 then
   theme = 'nightfly'
 end
 

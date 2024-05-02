@@ -117,6 +117,8 @@ M.custom = {
     ['x'] = { 'd', 'Cut' },
 
     ['p'] = { '"_dP' },
+
+    ['v'] = { '<Esc>', 'Exit visual mode' },
   },
   i = {
     ['<C-z>'] = { '<C-o>:u<CR>', 'Undo' },
