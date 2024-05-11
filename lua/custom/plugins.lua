@@ -28,7 +28,9 @@ return {
         flavour = 'macchiato'
       end
 
-      require('catppuccin').setup { flavour = flavour }
+      require('catppuccin').setup { flavour = flavour, custom_highlights = {} }
+
+      vim.opt.guicursor = 'n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20-Cursor,o:hor50-Cursor'
       vim.cmd.colorscheme 'catppuccin'
     end,
   },
@@ -106,5 +108,8 @@ return {
     dependencies = {
       'vim-denops/denops.vim',
     },
+  },
+  {
+    'pocco81/auto-save.nvim',
   },
 }
