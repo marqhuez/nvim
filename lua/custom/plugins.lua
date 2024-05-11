@@ -109,7 +109,4 @@ return {
       'vim-denops/denops.vim',
     },
   },
-  {
-    'pocco81/auto-save.nvim',
-  },
 }

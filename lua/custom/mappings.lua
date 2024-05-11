@@ -14,18 +14,8 @@ M.custom = {
     ['<C-c>'] = { 'y', 'Copy' },
     ['<C-z>'] = { 'u', 'Undo' },
     ['<C-y>'] = { '<C-r>', 'Redo' },
-    -- ['<C-s>'] = { '<cmd> w <CR>', 'Save' },
-    -- ['<C-s>'] = {
-    --   function()
-    --     vim.cmd [[w]]
-    --     vim.lsp.buf.format()
-    --   end,
-    --   'Save and format',
-    -- },
+    ['<C-s>'] = { '<cmd> w <CR>', 'Save' },
     ['<A-d>'] = { 'yyp', 'Duplicate line' },
-    ['<leader>fm'] = { function()
-      vim.lsp.buf.format()
-    end, 'Format' },
 
     ['j'] = { 'k', 'Up' },
     ['k'] = { 'j', 'Down' },
